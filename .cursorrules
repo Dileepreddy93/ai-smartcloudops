@@ -1,0 +1,66 @@
+# Cursor Rules for ai-smartcloudops
+
+These rules guide AI-assisted changes in this repository.
+
+## Project Overview
+- **Purpose**: Intelligent cloud operations toolkit.
+- **Language/Runtime**: Python 3.11.
+- **Primary package**: `ai_smartcloudops` under `src/`.
+- **Testing**: `pytest` in `tests/`.
+- **Docs**: `docs/` with `architecture.md` (Mermaid diagram).
+
+## Repository Layout
+- **Source code**: `src/ai_smartcloudops/`
+- **Tests**: `tests/` (pytest, `test_*.py`)
+- **Docs**: `docs/` (keep `architecture.md` updated when architecture changes)
+- **Dependencies**: `requirements.txt` is the single source of truth
+
+## Coding Conventions
+- Follow PEP 8. Prefer clarity and readability over cleverness.
+- Use type hints on all public functions and classes.
+- Use Google-style docstrings for non-trivial functions/classes.
+- Prefer early returns and shallow nesting.
+- Handle errors explicitly; avoid broad `except Exception`.
+- Do not swallow exceptions; either handle meaningfully or re-raise.
+- Use the standard library `logging` module for logs; no `print` in library code.
+- Avoid introducing global state. Prefer dependency injection.
+
+## Testing
+- Write tests with `pytest` in `tests/` using `test_*.py` naming.
+- Prefer unit tests close to the logic they validate.
+- When adding features, include at least one happy-path and one edge-case test.
+
+## File/Module Guidelines
+- New code goes under `src/ai_smartcloudops/` with `__init__.py` maintained.
+- Keep modules cohesive: one responsibility per module.
+- Separate core logic from integration code (e.g., cloud provider adapters).
+
+## Documentation
+- Update `docs/architecture.md` (Mermaid) if architecture boundaries change.
+- Add inline docstrings for public APIs; keep comments brief and about "why".
+
+## Security & Config
+- Never commit secrets or credentials. Use environment variables or secret managers.
+- Sanitize logs; avoid logging sensitive data.
+
+## Dependencies
+- Pin or range-pin in `requirements.txt`. Avoid unnecessary dependencies.
+- Prefer standard library when feasible.
+
+## Git & Commits
+- Use Conventional Commits: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`.
+- Keep commits focused and messages concise.
+
+## AI Assistant Instructions
+- Respect this layout and conventions by default.
+- When adding code:
+  - Include imports and ensure code runs on Python 3.11.
+  - Use type hints and docstrings for public functions/classes.
+  - Place tests in `tests/` and update `requirements.txt` if needed.
+  - Do not generate excessive boilerplate; keep changes minimal and targeted.
+  - If unclear, propose options briefly before large changes.
+- When editing docs:
+  - Use clear, concise language; update Mermaid diagrams as needed.
+- Do not introduce tools/config that are not already present without explicit instruction.
+
+
