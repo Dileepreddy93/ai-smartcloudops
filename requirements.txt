@@ -1,0 +1,5 @@
+# Requires Python 3.11
+pytest>=8.2
+
+
+pytest
