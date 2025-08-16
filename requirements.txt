@@ -1,0 +1,7 @@
+flask
+scikit-learn
+boto3
+prometheus-client
+requests
+pytest
+moto
