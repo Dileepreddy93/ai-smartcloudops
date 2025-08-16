@@ -19,3 +19,9 @@
 - Work one phase at a time.
 - Ask for clarification if a task is ambiguous.
 - Never hallucinate features or rename files without instruction.
+
+## Progress Notes
+- Phase 0 — Setup & Architecture: ✅ Completed
+- Phase 1 — Data Ingestion: ✅ Completed
+- Phase 2 — Monitoring Core: ✅ Completed
+- Phase 3 — AI Anomaly Detection: ⏭️ Upcoming
