@@ -1,3 +1,0 @@
-"""Pytest tests package scaffold."""
-
-
