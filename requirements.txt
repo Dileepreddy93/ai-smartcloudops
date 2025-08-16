@@ -3,3 +3,9 @@ pytest>=8.2
 
 
 pytest
+boto3
+prometheus-client
+grafana-api
+flask
+scikit-learn
+json
