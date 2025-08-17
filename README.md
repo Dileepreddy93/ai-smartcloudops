@@ -18,3 +18,9 @@ Implementation will proceed phase-by-phase with pytest markers.
 ## Phase 1 note
 
 - Metrics file for synthetic data: `data/metrics.json`.
+
+## Status up to Phase 3
+
+- Phase 1 (Data Ingestion): `fetch_metrics()` writes synthetic metrics JSON; tests green.
+- Phase 2 (Monitoring Core): `get_latest_metrics()` reads JSON; tests green.
+- Phase 3 (AI Analysis): `detect_anomaly()` and `log_anomaly_to_s3()` implemented; tests green.
