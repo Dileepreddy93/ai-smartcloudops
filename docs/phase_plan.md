@@ -117,6 +117,7 @@ ai-smartcloudops/
 **Manual Tasks:**
 
 * Decide local storage: `metrics.json`.
+* Chosen path: `data/metrics.json` (local synthetic metrics file).
 
 **Cursor Tasks:**
 

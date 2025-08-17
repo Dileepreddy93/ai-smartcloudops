@@ -14,3 +14,7 @@ Implementation will proceed phase-by-phase with pytest markers.
 - Minimal `requirements.txt` added per plan.
 - Pytest markers configured in `tests/conftest.py` for `phase0..phase7` and `aws_live`.
 - Phase 0 tests pass: `pytest -q -m "phase0"`.
+
+## Phase 1 note
+
+- Metrics file for synthetic data: `data/metrics.json`.
