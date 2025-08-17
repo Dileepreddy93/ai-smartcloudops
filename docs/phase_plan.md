@@ -108,7 +108,7 @@ ai-smartcloudops/
 
 **Pytest:**
 
-* `pytest -q -m "phase0"` passes locally.
+* `pytest -q -m "phase0"` passes locally. Status: ✅ Completed in this repo.
 
 ---
 
