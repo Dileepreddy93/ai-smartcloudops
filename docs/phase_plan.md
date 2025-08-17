@@ -183,7 +183,7 @@ ai-smartcloudops/
   * `/health` → `{ "status": "ok" }`
   * `/metrics` → Prometheus format
   * `/aws-health` → structure from `config/aws_targets.json`
-* `tests/test_phase5_dashboard.py`: validate all endpoints.
+* `tests/test_phase5_dashboard.py`: validate `/`, `/health`, `/metrics`, `/aws-health`.
 
 ---
 
@@ -192,7 +192,7 @@ ai-smartcloudops/
 **Cursor Tasks:**
 
 * `main.py` orchestrates: fetch → monitor → detect → remediate → log to S3.
-* `tests/test_phase6_integration.py`: full flow with temp dirs & mocks.
+* `tests/test_phase6_integration.py`: full flow with temp dirs & mocks. Status: ✅ Implemented and green.
 
 ---
 
@@ -200,7 +200,7 @@ ai-smartcloudops/
 
 **Cursor Tasks:**
 
-* `tests/test_aws_glue.py`
+* `tests/test_aws_glue.py` (skipped by default, enable with `AWS_LIVE=1`)
 
   * Prometheus `/ -/ready`
   * Grafana `/api/health`

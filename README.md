@@ -19,8 +19,18 @@ Implementation will proceed phase-by-phase with pytest markers.
 
 - Metrics file for synthetic data: `data/metrics.json`.
 
-## Status up to Phase 3
+## Status up to Phase 5
 
 - Phase 1 (Data Ingestion): `fetch_metrics()` writes synthetic metrics JSON; tests green.
 - Phase 2 (Monitoring Core): `get_latest_metrics()` reads JSON; tests green.
 - Phase 3 (AI Analysis): `detect_anomaly()` and `log_anomaly_to_s3()` implemented; tests green.
+- Phase 4 (Automation/Remediation): `remediate_action()` and `log_remediation_to_s3()` implemented; tests green.
+- Phase 5 (Dashboard): Flask endpoints `/`, `/health`, `/metrics`, `/aws-health` implemented; tests green.
+
+## Integration Status (Phase 6)
+
+- End-to-end pipeline via `run_pipeline()` implemented and green.
+
+## Optional AWS Live Checks (Phase 7)
+
+- Live checks scaffolded in `tests/test_aws_glue.py` and skipped by default.
